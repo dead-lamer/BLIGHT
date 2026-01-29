@@ -19,8 +19,8 @@ A lightweight C-based C2 framework for distributed command execution.
 
 ## Build
 
-- gcc -o client client.c -lz
-- gcc -o server server.c -lz
+- gcc -o client client.c ascii_art.c -lz
+- gcc -o server server.c ascii_art.c -lz
 
 ## Run
 
