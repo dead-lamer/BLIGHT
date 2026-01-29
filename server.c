@@ -12,6 +12,8 @@
 #include <zlib.h>
 #include <stdint.h>
 
+#include "ascii_art.h"
+
 #define MAX_CLIENTS 10
 #define DEFAULT_HOST "0.0.0.0"
 #define DEFAULT_PORT "4444"
@@ -93,7 +95,10 @@ int main(int argc, char *argv[]) {
         }
     }
 
+    
     uint32_t disconnect_hash = calculate_disconnect_hash(); // uint32_t
+
+    print_logo(1);
 
     printf("Server listening on %s:%s...\n", host, service);
 

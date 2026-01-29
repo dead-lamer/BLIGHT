@@ -10,6 +10,8 @@
 #include <zlib.h>
 #include <stdint.h>
 
+#include "ascii_art.h"
+
 #define DEFAULT_HOST "127.0.0.1"
 #define DEFAULT_PORT "4444"
 
@@ -58,6 +60,8 @@ int main(int argc, char *argv[]) {
     }
 
     freeaddrinfo(result);
+
+    print_logo(1);
 
     printf("Connected to server.\n");
 
